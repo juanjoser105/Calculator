@@ -1,3 +1,11 @@
 language: node_js
 node_js: 
  - "8"
+jdk:
+  - oraclejdk8
+addons:
+  sonarcloud: true
+script:
+  - npm run cover
+  - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=juanjoser105 -Dsonar.projectKey=juanjoser105_Calculator -Dsonar.sources='./app' -X
+
