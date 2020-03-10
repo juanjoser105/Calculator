@@ -1,1 +1,1 @@
-Calculator
+[![Build Status](https://travis-ci.com/juanjoser105/Calculator.svg?branch=master)](https://travis-ci.com/juanjoser105/Calculator)
